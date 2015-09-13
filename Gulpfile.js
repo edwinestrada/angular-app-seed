@@ -19,6 +19,26 @@
     return del(['build']);
   });
 
+  gulp.task('default', function ( done ) {
+    runSequence(
+      'clean',
+      'vet',
+      'sass',
+      done
+    );
+  });
+
+  gulp.task('sass', function(){
+    return gulp
+    .src( config.mainSass )
+    .pipe( sass() )
+    .pipe( gulp.dest( config.buildFolder ) );
+  });
+
+  gulp.task('tdd', function ( done ) {
+    return runTests( false, done );
+  });
+
   gulp.task('vet', function(){
     return gulp
       .src( config.allJS )
@@ -29,21 +49,6 @@
       .pipe( jshint.reporter('jshint-stylish') );
   });
 
-  gulp.task('sass', function(){
-    return gulp
-    .src( config.mainSass )
-    .pipe( sass() )
-    .pipe( gulp.dest( config.buildFolder ) );
-  });
-
-  gulp.task('default', function ( done ) {
-    runSequence(
-      'clean',
-      'vet',
-      'sass',
-      done
-    );
-  });
 
   function runTests( singleRun, done ) {
     var karma = require('karma').server;
