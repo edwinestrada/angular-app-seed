@@ -8,3 +8,4 @@ Angular application with batteries included :battery:. Package contents:
 + [JSHint](http://jshint.com/docs/) as a JS linter.
 + [Karma](https://github.com/karma-runner/karma) as a test runner.
 + [Protractor](http://angular.github.io/protractor/#/) for end to end tests.
++ A Procfile so deploying to [Heroku](https://www.heroku.com/) is super easy :sunglasses:.
