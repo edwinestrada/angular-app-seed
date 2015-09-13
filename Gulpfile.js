@@ -3,7 +3,7 @@
 
   var del = require('del');
   var gulp = require('gulp');
-  
+  var config = require('./config.js');
   gulp.task('ci', function ( done ) {
     return runTests( true, done );
   });
