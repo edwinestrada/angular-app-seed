@@ -1,0 +1,14 @@
+{
+  "name": "pixbit-angular-app-seed",
+  "version": "0.0.1",
+  "authors": [
+    "Seth Rhodes <seth@thinkpixbit.com>"
+  ],
+  "description": "Pixbit-customized starting point for Angular 1.x applications.",
+  "main": "Gulpfile.js",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/pixbit/angular-app-seed"
+}
