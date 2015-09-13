@@ -10,5 +10,11 @@
     "node"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/pixbit/angular-app-seed"
+  "homepage": "https://github.com/pixbit/angular-app-seed",
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-ui-router": "~0.2.15",
+    "foundation": "~5.5.2",
+    "jquery": "~2.1.4"
+  }
 }
