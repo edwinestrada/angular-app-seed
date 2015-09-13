@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/pixbit/angular-app-seed/issues"
   },
-  "homepage": "https://github.com/pixbit/angular-app-seed#readme"
+  "homepage": "https://github.com/pixbit/angular-app-seed#readme",
+  "dependencies": {
+    "bower": "^1.5.2",
+    "gulp": "^3.9.0"
+  }
 }
