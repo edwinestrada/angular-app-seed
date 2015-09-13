@@ -15,6 +15,10 @@
   "bugs": {
     "url": "https://github.com/pixbit/angular-app-seed/issues"
   },
+  "engines": {
+    "node": "0.12.x",
+    "npm": "2.11.x"
+  },
   "homepage": "https://github.com/pixbit/angular-app-seed#readme",
   "dependencies": {
     "bower": "^1.5.2",
