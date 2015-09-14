@@ -10,11 +10,21 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['mocha'],
+    frameworks: [
+      'chai-as-promised',
+      'chai',
+      'mocha'
+    ],
 
 
     // list of files / patterns to load in the browser
     files: [
+      'bower_components/angular/angular.js',
+      'bower_components/angular-mocks/angular-mocks.js',
+      'bower_components/angular-ui-router/release/angular-ui-router.js',
+      'src/**/*.module.js',
+      'src/**/*.js',
+      'test/unit/**/*'
     ],
 
 
@@ -54,7 +64,12 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['PhantomJS', 'Chrome', 'Firefox', 'Safari'],
+    browsers: [
+      'PhantomJS',
+      'Chrome',
+      'Firefox',
+      'Safari'
+    ],
 
 
     // Continuous Integration mode
