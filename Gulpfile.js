@@ -41,7 +41,7 @@
     return gulp
       .src( config.clientIndex )
       .pipe( wiredep() )
-      .pipe( inject( gulp.src( config.customJS ) ) )
+      .pipe( inject( gulp.src( config.customJS ), { relative: true } ) )
       .pipe( gulp.dest( config.client ) );
   });
 
