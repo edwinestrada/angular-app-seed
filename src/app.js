@@ -1,5 +1,7 @@
-(function(angular) {
+(function() {
   'use strict';
+  
+  /* globals angular */
 
   var PixbitAppSeedDependencies = [
     'ui.router',
@@ -17,7 +19,7 @@
   ];
 
   function config ( $stateProvider, $urlRouterProvider ) {
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/state1');
 
     $stateProvider
       .state('state1', {
