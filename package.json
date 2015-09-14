@@ -23,6 +23,8 @@
   "dependencies": {
     "bower": "^1.5.2",
     "browser-sync": "^2.9.3",
+    "chai": "^3.2.0",
+    "chai-as-promised": "^5.1.0",
     "del": "^2.0.2",
     "express": "^4.13.3",
     "gulp": "^3.9.0",
@@ -35,6 +37,8 @@
     "gulp-sass": "^2.0.4",
     "jshint-stylish": "^2.0.1",
     "karma": "^0.13.9",
+    "karma-chai": "^0.1.0",
+    "karma-chai-as-promised": "^0.1.2",
     "karma-chrome-launcher": "^0.2.0",
     "karma-firefox-launcher": "^0.1.6",
     "karma-mocha": "^0.2.0",
