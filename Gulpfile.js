@@ -1,13 +1,16 @@
 (function() {
   'use strict';
 
+  var concat = require('gulp-concat');
   var del = require('del');
   var gulp = require('gulp');
+  var inject = require('gulp-inject');
   var jshint = require('gulp-jshint');
   var jscs = require('gulp-jscs');
   var runSequence = require('run-sequence');
   var sass = require('gulp-sass');
   var stylish = require('gulp-jscs-stylish');
+  var wiredep = require('wiredep').stream;
 
   var config = require('./config.js');
 
@@ -16,7 +19,7 @@
   });
 
   gulp.task('clean', function(){
-    return del(['build']);
+    return del([ config.client ]);
   });
 
   gulp.task('default', function ( done ) {
@@ -26,6 +29,20 @@
       'sass',
       done
     );
+  });
+
+  gulp.task('build', function(){
+    return gulp
+      .src( config.buildComponents )
+      .pipe( gulp.dest( config.client ) );
+  });
+
+  gulp.task('inject', function(){
+    return gulp
+      .src( config.clientIndex )
+      .pipe( wiredep() )
+      .pipe( inject( gulp.src( config.customJS ) ) )
+      .pipe( gulp.dest( config.client ) );
   });
 
   gulp.task('sass', function(){
