@@ -1,0 +1,12 @@
+//Color Variables
+$pixbit-blue: #39ACFF;
+$white: #FFFFFF;
+
+.pixbit-blue {
+  color: $pixbit-blue;
+}
+
+body {
+  background: $pixbit-blue;
+  color: $white;
+}
