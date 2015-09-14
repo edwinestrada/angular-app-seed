@@ -2,18 +2,26 @@ var src = 'src/';
 var client = 'build/';
 module.exports = {
   allJS: [
-    './Gulpfile.js',
+    // './Gulpfile.js',
     src + '**/*.js'
   ],
-  //TODO: define this
-  mainSass: '',
-  index: src + 'index.html',
+  allClient: client + '**/*',
+  allSrc: src + '**/*',
+  browserReloadDelay: 1500,
   buildComponents: [
     src + '**/*.module.js',
-    src + '**/*',
+    src + '**/*.*',
     '!' + src + '**/*.spec.js'
   ],
+  clientCSS: client + '**/*.css',
+  clientJS: client + '**/*.js',
   client: client,
   clientIndex: client + 'index.html',
-  customJS: client + '**/*.js'
+  clientStyles: client + 'stylesheets/',
+  customJS: client + '**/*.js',
+  index: src + 'index.html',
+  mainSass: src + 'stylesheets/app.scss',
+  nodeServer: 'server.js',
+  srcHTML: src + '**/*.html',
+  srcJS: src + '**/*.js'
 };
