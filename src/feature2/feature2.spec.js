@@ -2,8 +2,8 @@
   'use strict';
   /* globals beforeEach,inject,describe,it,expect */
 
-  describe('feature1', function(){
-    beforeEach( module('feature1') );
+  describe('feature2', function(){
+    beforeEach( module('feature2') );
 
     var $controller;
 
@@ -15,21 +15,21 @@
       )
     );
 
-    describe('FeatureOneController', function(){
-      var $scope, FeatureOneController;
+    describe('FeatureTwoController', function(){
+      var $scope, FeatureTwoController;
       beforeEach(
         function(){
           $scope = {};
-          FeatureOneController = $controller('FeatureOneController', { $scope: $scope });
+          FeatureTwoController = $controller('FeatureTwoController', { $scope: $scope });
         }
       );
 
       it('should exist', function(){
-        expect(typeof FeatureOneController).to.equal('object');
+        expect(typeof FeatureTwoController).to.equal('object');
       });
 
       it('should have a greeting', function (){
-        expect($scope.greeting).to.equal('FeatureOneController');
+        expect($scope.greeting).to.equal('FeatureTwoController');
       });
 
     });
