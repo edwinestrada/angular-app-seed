@@ -52,9 +52,11 @@
     );
   });
 
-  gulp.task('heroku', ['inject'], function ( done ) {
-    console.log('Finished preparing for Heroku.');
-    done();
+  gulp.task('heroku', function ( done ) {
+    runSequence(
+      'inject',
+      done
+    );
   });
 
   gulp.task('inject', ['sass'], function(){
