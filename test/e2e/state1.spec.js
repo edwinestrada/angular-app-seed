@@ -14,9 +14,12 @@
     it('should have a title', function(){
       browser
         .getTitle()
-        .then(function(title){
-          expect(title).toEqual('Pixbit Angular Application');
-        });
+        .then(
+          function ( title ) {
+            expect( title )
+              .toEqual('Pixbit Angular Application');
+          }
+        );
     });
   });
 
