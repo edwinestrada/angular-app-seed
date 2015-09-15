@@ -4,7 +4,8 @@
   "description": "Pixbit-customized starting point for Angular 1.x applications.",
   "main": "Gulpfile.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "ci": "gulp ci"
   },
   "repository": {
     "type": "git",
