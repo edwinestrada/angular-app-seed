@@ -4,7 +4,7 @@
   "description": "Pixbit-customized starting point for Angular 1.x applications.",
   "main": "Gulpfile.js",
   "scripts": {
-    "start": "bower install && gulp heroku",
+    "heroku": "bower install && gulp heroku && node server.js",
     "test": "gulp test",
     "ci": "bower install && gulp ci"
   },
