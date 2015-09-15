@@ -1,4 +1,5 @@
 # Pixbit Angular 1.x Application Seed
+[![Build Status](https://travis-ci.org/pixbit/angular-app-seed.svg)](https://travis-ci.org/pixbit/angular-app-seed)
 Created by [Pixbit](http://thinkpixbit.com) with :fire:.
 
 Angular application with batteries included :battery:. Package contents:
