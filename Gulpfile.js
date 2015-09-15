@@ -31,7 +31,11 @@
   });
 
   gulp.task('compile:js', function( done ){
-    runSequence('build','inject', done);
+    runSequence(
+      'build',
+      'inject',
+      done
+    );
   });
 
   gulp.task('default', function ( done ) {
