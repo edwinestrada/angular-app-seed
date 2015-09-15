@@ -35,6 +35,7 @@
     "gulp-jshint": "^1.11.2",
     "gulp-nodemon": "^2.0.4",
     "gulp-sass": "^2.0.4",
+    "jasmine-spec-reporter": "^2.4.0",
     "jshint-stylish": "^2.0.1",
     "karma": "^0.13.9",
     "karma-chai": "^0.1.0",
