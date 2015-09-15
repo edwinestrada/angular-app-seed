@@ -137,6 +137,7 @@
     testingServer.start();
 
     function karmaCompleted ( karmaResult ) {
+      //TODO make sense out of and fix this guy
       console.log(karmaResult);
       //karmaResult will be 1 if error
       return karmaResult === 0 ?
