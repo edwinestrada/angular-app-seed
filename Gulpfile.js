@@ -39,6 +39,7 @@
       'inject',
       'server',
       [
+        'tdd',
         'monitor:html',
         'monitor:js',
         'monitor:styles'
@@ -109,10 +110,7 @@
 
   gulp.task('tdd', function ( done ) {
     //TODO work on this guy
-    return runSequence(
-      'default',
-      runTests( false, done)
-    );
+    return runTests( false, done );
   });
 
   gulp.task('vet', function(){
@@ -139,10 +137,11 @@
     testingServer.start();
 
     function karmaCompleted ( karmaResult ) {
+      console.log(karmaResult);
       //karmaResult will be 1 if error
-      return karmaResult === 1 ?
-      done('Tests failed') :
-      done();
+      return karmaResult === 0 ?
+      done():
+      done('Tests failed, this is custom');
     }
   }
 
