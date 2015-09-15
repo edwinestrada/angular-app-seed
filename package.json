@@ -5,7 +5,7 @@
   "main": "Gulpfile.js",
   "scripts": {
     "test": "gulp test",
-    "ci": "gulp ci"
+    "ci": "bower install && gulp ci"
   },
   "repository": {
     "type": "git",
