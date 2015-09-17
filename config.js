@@ -18,7 +18,6 @@ module.exports = {
   client: client,
   clientIndex: client + 'index.html',
   clientStyles: client + 'stylesheets/',
-  customJS: client + '**/*.js',
   index: src + 'index.html',
   mainSass: src + 'stylesheets/app.scss',
   nodeServer: 'server.js',
