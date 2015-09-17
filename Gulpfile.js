@@ -89,7 +89,11 @@
   gulp.task('sass', ['build'], function(){
     return gulp
     .src( config.mainSass )
-    .pipe( sass() )
+    .pipe(
+      sass({
+        includePaths: ['bower_components/foundation/scss']
+      })
+      .on('error', sass.logError))
     .pipe( gulp.dest( config.clientStyles ) );
   });
 
