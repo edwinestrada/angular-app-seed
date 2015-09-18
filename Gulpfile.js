@@ -97,7 +97,7 @@
     .pipe( gulp.dest( config.clientStyles ) );
   });
 
-  gulp.task('server', ['inject'], function(){
+  gulp.task('server', function(){
     var nodemonOptions = {
       script: config.nodeServer,
       delay: 1,
