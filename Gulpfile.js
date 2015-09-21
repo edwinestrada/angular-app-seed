@@ -89,11 +89,15 @@
   gulp.task('sass', ['build'], function(){
     return gulp
     .src( config.mainSass )
-    .pipe( sass() )
+    .pipe(
+      sass({
+        includePaths: ['bower_components/foundation/scss']
+      })
+      .on('error', sass.logError))
     .pipe( gulp.dest( config.clientStyles ) );
   });
 
-  gulp.task('server', ['inject'], function(){
+  gulp.task('server', function(){
     var nodemonOptions = {
       script: config.nodeServer,
       delay: 1,
