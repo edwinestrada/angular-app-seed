@@ -1,5 +1,6 @@
-@import './settings';
-
+@import "./settings";
+@import "foundation";
+$pixbit-blue: #49B0FD;
 .pixbit-blue {
   color: $pixbit-blue;
 }
