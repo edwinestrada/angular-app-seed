@@ -132,7 +132,7 @@ gulp.task 'refresh', (done) ->
     done
   )
 
-gulp.task 'test', (done) ->
+gulp.task 'test', ['default-6:concat-all-bower-js-into-one-file'], (done) ->
   serverConfig =
     configFile: __dirname + '/karma.conf.js',
     singleRun: true
