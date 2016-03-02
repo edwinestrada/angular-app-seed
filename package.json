@@ -1,8 +1,8 @@
 {
   "name": "pixbit-angular-app-seed",
-  "version": "0.0.1",
+  "version": "1.1.0",
   "description": "Pixbit-customized starting point for Angular 1.x applications.",
-  "main": "Gulpfile.js",
+  "main": "Gulpfile.coffee",
   "scripts": {
     "heroku": "bower install && gulp heroku && node server.js",
     "test": "gulp test",
@@ -12,14 +12,14 @@
     "type": "git",
     "url": "git+https://github.com/pixbit/angular-app-seed.git"
   },
-  "author": "Seth Rhodes <seth@thinkpixbit.com>",
+  "author": "Pixbit Devs <dev@thinkpixbit.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pixbit/angular-app-seed/issues"
   },
   "engines": {
-    "node": "0.12.x",
-    "npm": "2.11.x"
+    "node": "4.2.4",
+    "npm": "2.14.7"
   },
   "homepage": "https://github.com/pixbit/angular-app-seed#readme",
   "dependencies": {
@@ -33,10 +33,11 @@
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-inject": "^1.5.0",
-    "gulp-jscs": "^2.0.0",
+    "gulp-jscs": "2.0.0",
     "gulp-jscs-stylish": "^1.1.2",
     "gulp-jshint": "^1.11.2",
     "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "1.6.0",
     "jasmine-spec-reporter": "^2.4.0",
     "jshint-stylish": "^2.0.1",
     "karma": "^0.13.9",
