@@ -5,6 +5,7 @@
   "main": "Gulpfile.coffee",
   "scripts": {
     "heroku": "bower install && gulp heroku && node server.js",
+    "pretest": "bower install",
     "test": "gulp test",
     "ci": "bower install && gulp ci"
   },
