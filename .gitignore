@@ -1,4 +1,4 @@
 node_modules
-components
+src/components
 build
 .DS_Store
