@@ -1,11 +1,11 @@
 {
   "name": "pixbit-angular-app-seed",
-  "version": "0.0.1",
+  "version": "1.1.0",
   "authors": [
-    "Seth Rhodes <seth@thinkpixbit.com>"
+    "Pixbit Dev <dev@thinkpixbit.com>"
   ],
   "description": "Pixbit-customized starting point for Angular 1.x applications.",
-  "main": "Gulpfile.js",
+  "main": "Gulpfile.coffee",
   "moduleType": [
     "node"
   ],
@@ -13,9 +13,14 @@
   "homepage": "https://github.com/pixbit/angular-app-seed",
   "dependencies": {
     "angular": "~1.4.5",
-    "angular-mocks": "~1.4.5",
+    "angular-mocks": "1.5.0",
     "angular-ui-router": "~0.2.15",
-    "foundation": "~5.5.2",
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "foundation-sites": "6.2.0"
+  },
+  "resolutions": {
+    "angular": "1.4.9",
+    "angular-mocks": "~1.4.5",
+    "jquery": "~2.2.0"
   }
 }

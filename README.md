@@ -4,7 +4,7 @@
 Created by [Pixbit](http://thinkpixbit.com) with :fire:.
 
 Angular application with batteries included :battery:. Package contents:
-+ [Foundation](https://github.com/zurb/foundation) for front-end :sparkles:.
++ [Foundation for Sites](https://github.com/zurb/foundation-sites) for front-end :sparkles:.
 + [Gulp](https://github.com/gulpjs/gulp/) for task management.
 + [Browsersync](http://www.browsersync.io/) for less refreshes.
 + [Sass](http://sass-lang.com/) compilation.
