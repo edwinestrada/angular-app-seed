@@ -1,6 +1,6 @@
-(function() {
+(function () {
   'use strict';
-  
+
   /* globals angular */
 
   var PixbitAppSeedDependencies = [
@@ -10,15 +10,15 @@
   ];
 
   angular
-    .module( 'PixbitAppSeed', PixbitAppSeedDependencies )
-    .config( config );
+    .module('PixbitAppSeed', PixbitAppSeedDependencies)
+    .config(config);
 
   config.$inject = [
     '$stateProvider',
     '$urlRouterProvider'
   ];
 
-  function config ( $stateProvider, $urlRouterProvider ) {
+  function config($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/state1');
 
     $stateProvider
