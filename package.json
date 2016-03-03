@@ -4,10 +4,12 @@
   "description": "Pixbit-customized starting point for Angular 1.x applications.",
   "main": "Gulpfile.coffee",
   "scripts": {
+    "ci": "bower install && gulp ci",
     "heroku": "bower install && gulp heroku && node server.js",
+    "prestart": "npm install && bower install",
     "pretest": "bower install",
-    "test": "gulp test",
-    "ci": "bower install && gulp ci"
+    "start": "gulp",
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
