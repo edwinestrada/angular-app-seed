@@ -2,7 +2,7 @@
   "name": "pixbit-angular-app-seed",
   "version": "1.1.0",
   "description": "Pixbit-customized starting point for Angular 1.x applications.",
-  "main": "Gulpfile.coffee",
+  "main": "server.js",
   "scripts": {
     "heroku": "babel-node tools/herokuWebpackBuild.js && node server.js",
     "lint": "eslint src/",
