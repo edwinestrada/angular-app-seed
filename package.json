@@ -26,7 +26,6 @@
   },
   "homepage": "https://github.com/pixbit/angular-app-seed#readme",
   "dependencies": {
-    "bower": "^1.5.2",
     "browser-sync": "^2.9.3",
     "chai": "^3.2.0",
     "chai-as-promised": "^5.1.0",
@@ -48,7 +47,5 @@
     "morgan": "^1.6.1",
     "phantomjs": "^1.9.18",
     "protractor": "^2.2.0",
-    "run-sequence": "^1.1.2",
-    "wiredep": "^2.2.2"
   }
 }
