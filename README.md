@@ -4,6 +4,8 @@
 Created by [Pixbit](http://thinkpixbit.com) with :fire:.
 
 Angular application with batteries included :battery:. Package contents:
++ [Webpack](http://webpack.github.io/) as a bundler/general magic worker.
++ [Babel](http://babeljs.io/) for future-proof JavaScript :fire:.
 + [Foundation for Sites](https://github.com/zurb/foundation-sites) for front-end :sparkles:.
 + [NPM scripts](https://docs.npmjs.com/misc/scripts) for task management.
 + [Browsersync](http://www.browsersync.io/) for less refreshes.
