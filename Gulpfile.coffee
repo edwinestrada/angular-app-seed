@@ -53,6 +53,7 @@ gulp.task 'default-3:copy-all-src-except-scss-to-build', () ->
     '!**/*.scss'
   ]
     .pipe gulp.dest 'build'
+    .pipe browserSync.stream()
 
 gulp.task 'default-4:sass-all-stylesheets', () ->
   sassOptions =
