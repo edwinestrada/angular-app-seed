@@ -10,15 +10,24 @@ angular
   .module('mainApp', appDependencies)
   .config(config);
 
+config.$inject = [
+  '$stateProvider',
+  '$urlRouterProvider'
+];
+
 function config($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/login');
+  $urlRouterProvider.otherwise('/state1');
 
   $stateProvider
-    .state('login', {
-      url: '/login',
+    .state('state1', {
+      url: '/state1',
       templateUrl: 'feature1/feature1.html',
-      controller: 'LoginController',
-      controllerAs: 'LoginCtrl'
+      controller: 'FeatureOneController'
+    })
+    .state('state2', {
+      url: '/state2',
+      templateUrl: 'feature2/feature2.html',
+      controller: 'FeatureTwoController'
     });
 }
 
