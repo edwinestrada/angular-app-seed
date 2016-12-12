@@ -1,5 +1,6 @@
 @import "./components/settings";
 @import "foundation";
+@include foundation-everything;
 $blue: #49B0FD;
 
 .blue {
