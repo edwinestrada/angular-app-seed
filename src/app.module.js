@@ -1,13 +1,17 @@
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
 import './stylesheets/app.scss';
+import feature1Module from './feature1/feature1.module';
+import feature2Module from './feature2/feature2.module';
 
 let appDependencies = [
-  uirouter
+  uirouter,
+  feature1Module,
+  feature2Module
 ];
 
 angular
-  .module('mainApp', appDependencies)
+  .module('AngularAppSeed', appDependencies)
   .config(config);
 
 config.$inject = [
@@ -31,5 +35,5 @@ function config($stateProvider, $urlRouterProvider) {
     });
 }
 
-let mainAppModule = angular.module('mainApp').name;
+let mainAppModule = angular.module('AngularAppSeed').name;
 export default mainAppModule;
