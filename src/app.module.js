@@ -1,6 +1,8 @@
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
+
 import './stylesheets/app.scss';
+
 import feature1Module from './feature1/feature1.module';
 import feature2Module from './feature2/feature2.module';
 
