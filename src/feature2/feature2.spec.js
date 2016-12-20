@@ -16,7 +16,7 @@
       var FeatureTwoController = null;
       beforeEach(function() {
         $scope = {};
-        FeatureTwoController = $controller('FeatureTwoController', { $scope: $scope });
+        FeatureTwoController = $controller('FeatureTwoController', {$scope: $scope});
       });
 
       it('should exist', function() {
@@ -26,8 +26,6 @@
       it('should have a greeting', function() {
         expect($scope.greeting).to.equal('FeatureTwoController');
       });
-
     });
   });
-
-}());
+})();
