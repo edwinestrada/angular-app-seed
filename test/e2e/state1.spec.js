@@ -13,7 +13,7 @@
       browser
         .getTitle()
         .then(function(title) {
-          expect(title).toEqual('Angular Application');
+          expect(title).toEqual('Template Angular Application');
         });
     });
   });
