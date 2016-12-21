@@ -1,12 +1,13 @@
 @import "./components/settings";
 @import "foundation";
-$pixbit-blue: #49B0FD;
+@include foundation-everything;
+$blue: #49B0FD;
 
-.pixbit-blue {
-  color: $pixbit-blue;
+.blue {
+  color: $blue;
 }
 
 body {
-  background: $pixbit-blue;
+  background: $blue;
   color: $white;
 }

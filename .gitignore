@@ -1,4 +1,4 @@
 node_modules
-src/components
-build
+bundle.*
 .DS_Store
+*.log

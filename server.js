@@ -1,4 +1,4 @@
-(function () {
+(function() {
   'use strict';
 
   var express = require('express');
@@ -6,13 +6,13 @@
   var logger = require('morgan');
 
   var app = express();
-  var PORT = process.env.PORT || 8080;
+  var PORT = process.env.PORT || 3001;
 
   app
-    .use(logger('dev'))
-    .use('/', express.static(__dirname + '/build'))
-    .listen(PORT);
+    .use(logger((PORT === 3001 ? 'dev' : 'short')))
+    .use('/', express.static(`${__dirname}/src`))
+    .listen(PORT, () => {
+      console.log(chalk.cyan('Express server setup on http://localhost:%d'), PORT);
+    });
 
-  console.log(chalk.cyan('Express server setup on http://localhost:%d'), PORT);
-
-}());
+})();

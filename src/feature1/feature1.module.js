@@ -1,17 +1,14 @@
-(function () {
-  'use strict';
-  /* globals angular */
+import angular from 'angular';
 
-  angular
-    .module('feature1', [])
-    .controller('FeatureOneController', FeatureOneController);
+const feature1Module = angular
+  .module('feature1', [])
+  .controller('FeatureOneController', FeatureOneController);
 
-  FeatureOneController.$inject = [
-    '$scope'
-  ];
+FeatureOneController.$inject = [];
 
-  function FeatureOneController($scope) {
-    $scope.greeting = 'FeatureOneController';
-  }
+function FeatureOneController() {
+  let vm = this;
+  vm.greeting = 'FeatureOneController';
+}
 
-}());
+export default feature1Module.name;
