@@ -24,7 +24,7 @@
       });
 
       it('should have a greeting', function() {
-        expect($scope.greeting).to.equal('FeatureTwoController');
+        expect(FeatureTwoController.greeting).to.equal('FeatureTwoController');
       });
     });
   });
