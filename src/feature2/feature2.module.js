@@ -5,11 +5,12 @@ const feature2Module = angular
   .controller('FeatureTwoController', FeatureTwoController);
 
 FeatureTwoController.$inject = [
-  '$scope'
+
 ];
 
-function FeatureTwoController($scope) {
-  $scope.greeting = 'FeatureTwoController';
+function FeatureTwoController() {
+  let vm = this;
+  vm.greeting = 'FeatureTwoController';
 }
 
 export default feature2Module.name;
