@@ -18,6 +18,7 @@ export default {
     contentBase: './src'
   },
   plugins: [
+    new webpack.optimize.UglifyJsPlugin(),
     new ExtractTextPlugin("stylesheets/bundle.css")
   ],
   module: {
