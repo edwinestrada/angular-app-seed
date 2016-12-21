@@ -9,7 +9,8 @@
     "start": "babel-node tools/startServer.js",
     "prestart": "npm install",
     "pretest": "npm install",
-    "test": "echo 'no tests running' && exit 0"
+    "test": "babel-node tools/herokuWebpackBuild.js && karma start",
+    "test:e2e": "protractor protractor.conf.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/pixbit/angular-app-seed#readme",
   "dependencies": {
     "angular": "1.5.8",
+    "angular-mocks": "1.6.0",
     "angular-ui-router": "0.3.2",
     "babel-cli": "6.18.0",
     "babel-core": "6.18.2",
