@@ -1,5 +1,5 @@
 # Pixbit Angular 1.x Application Seed
-[![Build Status](https://travis-ci.org/pixbit/angular-app-seed.svg)](https://travis-ci.org/pixbit/angular-app-seed)
+[![Build Status](https://travis-ci.org/sirhodes/angular-app-seed.svg)](https://travis-ci.org/sirhodes/angular-app-seed)
 
 Created by [Pixbit](http://thinkpixbit.com) with :fire:.
 
