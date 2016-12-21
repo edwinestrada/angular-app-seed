@@ -1,7 +1,5 @@
-# Pixbit Angular 1.x Application Seed
+# Angular 1.x Application Seed
 [![Build Status](https://travis-ci.org/sirhodes/angular-app-seed.svg)](https://travis-ci.org/sirhodes/angular-app-seed)
-
-Created by [Pixbit](http://thinkpixbit.com) with :fire:.
 
 Angular application with batteries included :battery:. Package contents:
 + [Webpack](http://webpack.github.io/) as a bundler/general magic worker.
@@ -13,3 +11,5 @@ Angular application with batteries included :battery:. Package contents:
 + [Karma](https://github.com/karma-runner/karma) as a test runner.
 + [Protractor](http://angular.github.io/protractor/#/) for end to end tests.
 + A Procfile so deploying to [Heroku](https://www.heroku.com/) is super easy :sunglasses:.
+
+Originally created by [Pixbit](http://thinkpixbit.com) with :fire:.
