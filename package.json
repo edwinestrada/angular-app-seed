@@ -1,7 +1,7 @@
 {
-  "name": "pixbit-angular-app-seed",
+  "name": "angular-app-seed",
   "version": "1.1.0",
-  "description": "Pixbit-customized starting point for Angular 1.x applications.",
+  "description": "Customized, opinionated, starting point for Angular 1.x applications.",
   "main": "server.js",
   "scripts": {
     "heroku": "babel-node tools/herokuWebpackBuild.js && node server.js",
