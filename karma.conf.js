@@ -1,6 +1,6 @@
 // Karma configuration
 // Generated on Sun Sep 13 2015 11:20:05 GMT-0400 (EDT)
-
+const testing = process.env.ENVIRONMENT === 'TESTING';
 module.exports = function (config) {
   config.set({
 
@@ -18,16 +18,13 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'build/assets/scripts/bower-scripts.js',
-      'src/**/*.module.js',
-      'src/**/*.js',
+      'src/bundle.js',
+      'node_modules/angular-mocks/angular-mocks.js',
       'src/**/*.spec.js'
     ],
 
     // list of files to exclude
-    exclude: [
-      'src/components/**/*'
-    ],
+    exclude: [],
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
@@ -54,15 +51,15 @@ module.exports = function (config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: [
-      'PhantomJS',
-      // 'Chrome',
+    browsers: testing ? ['PhantomJS'] : [
+      // 'PhantomJS',
+      'Chrome',
       // 'Firefox',
       // 'Safari'
     ],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false
+    singleRun: testing === true
   })
 };
